@@ -1,0 +1,22 @@
+.status-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #00000070;
+    color: white;
+    width: 90%;
+    max-width: 1244px;
+    max-height: 80%;
+    overflow-y: auto;
+    gap:1rem;
+}
+.status-block>*{
+    padding:.5rem;
+    background-color: #00000070;
+    border: solid 1px white;
+    border-radius: 10px;
+}

@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+    <title>ACM</title>
+    <link rel="stylesheet" href="{% static 'MainApp/acm.css'%}">
+
+{% endblock head %}
+{% block body %}
+<div class="status-block">
+    <div class="status">{% for a in question_1 %}
+    {% if forloop.last %}
+    acm_team_1 : Order:{{a.order}}| question:{{a.question}}
+    {% endif %}
+    {% empty %}
+    not get solved
+    {% endfor %}</div>
+    <div class="status">{% for a in question_2 %}
+    {% if forloop.last %}
+    acm_team_2 : Order:{{a.order}}| question:{{a.question}}
+    {% endif %}
+    {% empty %}
+    not get solved
+    {% endfor %}</div>
+    <div class="status">{% for a in question_3 %}
+    {% if forloop.last %}
+    acm_team_3 : Order:{{a.order}}| question:{{a.question}}
+    {% endif %}
+    {% empty %}
+    not get solved
+    {% endfor %}</div>
+    <div class="status">{% for a in question_4 %}
+    {% if forloop.last %}
+    acm_team_4 : Order:{{a.order}}| question:{{a.question}}
+    {% endif %}
+    {% empty %}
+    not get solved
+    {% endfor %}</div>
+    <div class="status">{% for a in question_5 %}
+    {% if forloop.last %}
+    acm_team_5 : Order:{{a.order}}| question:{{a.question}}
+    {% endif %}
+    {% empty %}
+    not get solved
+    {% endfor %}</div>
+    <div class="status">{% for a in question_6 %}
+    {% if forloop.last %}
+    acm_team_6 : Order:{{a.order}}| question:{{a.question}}
+    {% endif %}
+    {% empty %}
+    not get solved
+    {% endfor %}</div>
+    <div class="status">{% for a in question_7 %}
+    {% if forloop.last %}
+    acm_team_7 : Order:{{a.order}}| question:{{a.question}}
+    {% endif %}
+    {% empty %}
+    not get solved
+    {% endfor %}</div>
+    <div class="status">{% for a in question_8 %}
+    {% if forloop.last %}
+    acm_team_8 : Order:{{a.order}}| question:{{a.question}}
+    {% endif %}
+    {% empty %}
+    not get solved
+    {% endfor %}</div>
+    <div class="status">{% for a in question_9 %}
+    {% if forloop.last %}
+    acm_team_9 : Order:{{a.order}}| question:{{a.question}}
+    {% endif %}
+    {% empty %}
+    not get solved
+    {% endfor %}</div>
+    <div class="status">{% for a in question_10 %}
+    {% if forloop.last %}
+    acm_team_10 : Order:{{a.order}}| question:{{a.question}}
+    {% endif %}
+    {% empty %}
+    not get solved
+    {% endfor %}</div>
+</div>
+{% endblock body %}

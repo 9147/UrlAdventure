@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+    <title>ACM</title>
+    <link rel="stylesheet" href="{% static 'MainApp/home.css'%}">
+{% endblock head %}
+{% block body %}
+{% for a in questions %}
+    {% if not a.solved %}
+    {% if forloop.first %}
+    <div class="question-block">
+    <div class="images">
+    {% if a.question.image1 %}
+    <img src="{{a.question.image1}}" alt="image1" height="200px">
+    {% endif %}
+    {% if a.question.image2 %}
+    <img src="{{a.question.image2}}" alt="image2" height="200px">
+    {% endif %}
+    {% if a.question.image3 %}
+    <img src="{{a.question.image3}}" alt="image3" height="200px">
+    {% endif %}
+</div>
+    <div id="question_id">{{a.question.id}}</div>
+    <div id="question">{{a.question.text}}</div>
+    <input type="text" id="code">
+    <input type="submit" class="button" onclick="submit()">
+</div>
+    {% endif %}
+    {% endif %}
+{% endfor %}
+{% endblock body %}
+{% block script %}
+    <!-- scripts for home -->
+    <script src="{% static 'MainApp/home.js' %}"></script>
+{% endblock script %}
